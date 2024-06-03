@@ -1,16 +1,3 @@
-!
-
-<div align="center">
-
-[![CodeFactor]](https://www.codefactor.io/repository/github/jktrn/enscribe.dev)
-[![Next.js]](https://hexo.io)
-[![License]](LICENSE)
-[![Non-Code License]](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-
-</div>
-
----
-
 ## Technology Stack
 
 This is a list of the various technologies used to build this website:

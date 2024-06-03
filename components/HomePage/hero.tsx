@@ -1,7 +1,7 @@
 import { Button } from '@/components/shadcn/button'
 import siteMetadata from '@/data/siteMetadata'
 import { IconProps } from '@radix-ui/react-icons/dist/types'
-import { Github, Instagram, Linkedin, Map, MessageCircle } from 'lucide-react'
+import { Ghost, Github, Instagram, Linkedin, Map, MessageCircle } from 'lucide-react'
 import React from 'react'
 
 import BoxReveal from '../MagicUi/box-reveal'
@@ -71,36 +71,38 @@ function hero() {
     //     </>
     // )
     return (
-        <div className="flex justify-between max-w-6xl mx-auto">
-            <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden pt-8">
+        <div className="flex justify-between max-w-6xl mx-auto ">
+            <div className="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden pt-24 pl-14">
+                <BoxReveal boxColor={'#5046e6'} duration={0.5}>
+                    <h2 className="mt-[.5rem] text-[2rem]">Hi, I'm</h2>
+                </BoxReveal>
+
                 <BoxReveal boxColor={'#5046e6'} duration={0.5}>
                     <p className="text-[3.5rem] font-semibold">
-                        Magic UI<span className="text-[#5046e6]">.</span>
+                        Pranit Adgokar<span className="text-[#5046e6]">.</span>
                     </p>
                 </BoxReveal>
 
                 <BoxReveal boxColor={'#5046e6'} duration={0.5}>
-                    <h2 className="mt-[.5rem] text-[1rem]">
-                        UI library for <span className="text-[#5046e6]">Design Engineers</span>
-                    </h2>
+                    <h2 className="mt-[.5rem] text-[1rem]">I build things for the Web.</h2>
+                </BoxReveal>
+
+                <BoxReveal boxColor={'#5046e6'} duration={0.1}>
+                    <WordRotate
+                        className="mt-[1.5rem]  text-lg w-full text-center font-bold leading-none tracking-tighter"
+                        words={[
+                            'Web Development.',
+                            'Mobile Development.',
+                            'Backend Development.',
+                            'Full Stack Development.',
+                        ]}
+                    />
                 </BoxReveal>
 
                 <BoxReveal boxColor={'#5046e6'} duration={0.5}>
-                    <div className="mt-[1.5rem]">
-                        <p>
-                            -&gt; 20+ free and open-source animated components built with
-                            <span className="font-semibold text-[#5046e6]"> React</span>,
-                            <span className="font-semibold text-[#5046e6]"> Typescript</span>,
-                            <span className="font-semibold text-[#5046e6]"> Tailwind CSS</span>, and
-                            <span className="font-semibold text-[#5046e6]"> Framer Motion</span>
-                            . <br />
-                            -&gt; 100% open-source, and customizable. <br />
-                        </p>
-                    </div>
-                </BoxReveal>
-
-                <BoxReveal boxColor={'#5046e6'} duration={0.5}>
-                    <Button className="mt-[1.6rem] bg-[#5046e6]">Explore</Button>
+                    <Button variant="outline" className="mt-[1.6rem]">
+                        Contact Me
+                    </Button>
                 </BoxReveal>
             </div>
             <div className="relative flex h-[500px] w-full max-w-[28rem] items-center justify-center overflow-hidden rounded-lg bg-background md:shadow-xl">
@@ -123,7 +125,7 @@ function hero() {
                     delay={10}
                     radius={70}
                 >
-                    <Icons.notion />
+                    <Icons.openai />
                 </OrbitingCircles>
 
                 {/* Outer Circles (reverse) */}
